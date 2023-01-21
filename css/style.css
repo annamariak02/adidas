@@ -188,7 +188,6 @@ nav a {
 .hero img{
   transform: rotate(333deg);
   margin: auto;
-  height: 300px;
 }
 .hero .big-txt{
 position: absolute;
@@ -198,7 +197,7 @@ transform: translate(-50%, -50%);
 }
 .hero-copy{
   position: absolute;
-  right: 10%;
+  right: 5%;
   bottom: 5%;
 }
 .hero-copy h4{
@@ -217,3 +216,39 @@ transform: translate(-50%, -50%);
   width: 27px;
 }
 /*end main styles*/
+/*responsive*/
+@media only screen and (max-width:600px){
+  header{
+    margin: 1em auto 0;
+    padding: 1em;
+  }
+  .wrapper{
+    padding: 1em;
+  }
+  .main-nav{
+    display: none;
+  }
+  .big-txt {
+    font-size: 3em;
+  }
+  .hero{
+    height: 80vh;
+  }
+  .hero .big-txt{
+    top: 25%;
+  }
+  .hero-copy{
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+  .hero-copy h4{
+    font-size: 24px;
+  }
+  .hero-copy p{
+    margin-bottom: 16px;
+  }
+ .btn-primary{
+  padding: 8px 16px;
+ }
+}
